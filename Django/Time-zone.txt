@@ -1,0 +1,28 @@
+In Django, you can set the TIME_ZONE setting in your project's settings file to specify the default time zone for your application. The TIME_ZONE setting should be a string representing the time zone for your project. Here are some examples of valid time zone values that you can use in Django:
+
+UTC (Coordinated Universal Time):
+
+TIME_ZONE = 'UTC'
+Eastern Time (US):
+
+TIME_ZONE = 'America/New_York'
+Central Time (US):
+
+
+TIME_ZONE = 'America/Chicago'
+Pacific Time (US):
+
+TIME_ZONE = 'America/Los_Angeles'
+Indian Standard Time:
+
+TIME_ZONE = 'Asia/Kolkata'
+Greenwich Mean Time (GMT):
+
+TIME_ZONE = 'GMT'
+Australian Eastern Standard Time (AEST):
+
+TIME_ZONE = 'Australia/Sydney'
+
+You can find a comprehensive list of time zones in the IANA Time Zone Database. Django uses the time zone information provided by this database. You can refer to the official documentation for the TIME_ZONE setting for more information: Django TIME_ZONE.
+
+Make sure to choose the appropriate time zone for your application based on its geographical context or specific requirements. Additionally, consider using the USE_TZ setting, which enables or disables time zone support in Django. If USE_TZ is set to True, Django will store datetimes in the database in UTC and convert them to the current time zone when needed.
